@@ -2,7 +2,7 @@ FROM ubuntu:24.04
 
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends \
-        gcc make nasm binutils curl iproute2 less && \
+        gcc make nasm binutils curl iproute2 less vim && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
